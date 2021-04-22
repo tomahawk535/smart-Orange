@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'TT Hoves';
+  src: url(../../fonts/TT_Hoves/TTHoves-Regular.eot);
+  src: local("TT Hoves Regular"),local("TTHoves-Regular"),url(../../fonts/TT_Hoves/TTHoves-Regular.eot?#iefix) format("embedded-opentype"),url(../../fonts/TT_Hoves/TTHoves-Regular.woff2) format("woff2"),url(../../fonts/TT_Hoves/TTHoves-Regular.woff) format("woff"),url(../../fonts/TT_Hoves/TTHoves-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal
+}
+@font-face {
+  font-family: 'TT Hoves';
+  src: url(../../fonts/TT_Hoves/TTHoves-Bold.eot);
+  src: local("TT Hoves Bold"),local("TTHoves-Bold"),url(../../fonts/TT_Hoves/TTHoves-Bold.eot?#iefix) format("embedded-opentype"),url(../../fonts/TT_Hoves/TTHoves-Bold.woff2) format("woff2"),url(../../fonts/TT_Hoves/TTHoves-Bold.woff) format("woff"),url(../../fonts/TT_Hoves/TTHoves-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal
+}
+@font-face {
+  font-family: 'TT Hoves';
+  src: url(../../fonts/TT_Hoves/TTHoves-Light.eot);
+  src: local("TT Hoves Light"),local("TTHoves-Light"),url(../../fonts/TT_Hoves/TTHoves-Light.eot?#iefix) format("embedded-opentype"),url(../../fonts/TT_Hoves/TTHoves-Light.woff2) format("woff2"),url(../../fonts/TT_Hoves/TTHoves-Light.woff) format("woff"),url(../../fonts/TT_Hoves/TTHoves-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal
+}
+@font-face {
+  font-family: 'TT Hoves';
+  src: url(../../fonts/TT_Hoves/TTHoves-Medium.eot);
+  src: local("TT Hoves Medium"),local("TTHoves-Medium"),url(../../fonts/TT_Hoves/TTHoves-Medium.eot?#iefix) format("embedded-opentype"),url(../../fonts/TT_Hoves/TTHoves-Medium.woff2) format("woff2"),url(../../fonts/TT_Hoves/TTHoves-Medium.woff) format("woff"),url(../../fonts/TT_Hoves/TTHoves-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal
+}

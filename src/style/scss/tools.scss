@@ -1,0 +1,109 @@
+
+// font
+@font-face {
+  font-family: 'TT Hoves';
+  src: url('../../fonts/TT_Hoves/TTHoves-Regular.eot');
+  src: local('TT Hoves Regular'), local('TTHoves-Regular'),
+  url('../../fonts/TT_Hoves/TTHoves-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/TT_Hoves/TTHoves-Regular.woff2') format('woff2'),
+  url('../../fonts/TT_Hoves/TTHoves-Regular.woff') format('woff'),
+  url('../../fonts/TT_Hoves/TTHoves-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Hoves';
+  src: url('../../fonts/TT_Hoves/TTHoves-Bold.eot');
+  src: local('TT Hoves Bold'), local('TTHoves-Bold'),
+  url('../../fonts/TT_Hoves/TTHoves-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/TT_Hoves/TTHoves-Bold.woff2') format('woff2'),
+  url('../../fonts/TT_Hoves/TTHoves-Bold.woff') format('woff'),
+  url('../../fonts/TT_Hoves/TTHoves-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Hoves';
+  src: url('../../fonts/TT_Hoves/TTHoves-Light.eot');
+  src: local('TT Hoves Light'), local('TTHoves-Light'),
+  url('../../fonts/TT_Hoves/TTHoves-Light.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/TT_Hoves/TTHoves-Light.woff2') format('woff2'),
+  url('../../fonts/TT_Hoves/TTHoves-Light.woff') format('woff'),
+  url('../../fonts/TT_Hoves/TTHoves-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TT Hoves';
+  src: url('../../fonts/TT_Hoves/TTHoves-Medium.eot');
+  src: local('TT Hoves Medium'), local('TTHoves-Medium'),
+  url('../../fonts/TT_Hoves/TTHoves-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/TT_Hoves/TTHoves-Medium.woff2') format('woff2'),
+  url('../../fonts/TT_Hoves/TTHoves-Medium.woff') format('woff'),
+  url('../../fonts/TT_Hoves/TTHoves-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+$font:  'TT Hoves';
+
+// colors
+$main-text-color: #000;
+$sub-text-color: #fff;
+$headers-text-color: #bdbdbd;
+$form-text-color: #8d8d8d;
+
+
+//backgrounds
+$main-bg: #fff;
+$sub-bg:  #fbfbfb;
+$form-bg: #f3f3f3;
+$footer-bg: #2c2c2c;
+$light-btn-bg: #fff;
+$darck-btn-bg:#333333;
+
+
+// buttons
+@mixin btn {
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  text-transform: uppercase;
+}
+
+// headers
+@mixin main-header {
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 64px;
+}
+@mixin secondary-headers {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+// paragraphs
+@mixin p-large {
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+}
+@mixin p-medium {
+  font-family: $font;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+}
