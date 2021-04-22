@@ -1,0 +1,111 @@
+@import "tools";
+
+// navigation style start here
+nav {
+  display: flex;
+  padding: 32px 9%;
+  align-content: center;
+  justify-content: space-between;
+  .brand {
+    flex-basis: 15%;
+    z-index: 999;
+    .brand-logo {
+      width: 100%;
+
+    }
+  }
+  .mobile-nav-btn {
+    font-size: 23px;
+    align-self: center;
+    z-index: 999;
+  }
+  .navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding-top: 55px;
+    text-align: center;
+    display: none;
+    height: 100%;
+    background-color: $sub-bg;
+    opacity: 50%;
+    .navigation-item{
+      padding: 10px 0;
+      .navigation-link {
+        text-transform: uppercase;
+        font-size: 12px;
+        font-family: $font;
+        font-weight: normal;
+        font-style: normal;
+        color: $nav-text-color;
+        text-decoration: none;
+
+      }
+    }
+    .active {
+      display: none;
+    }
+  }
+}
+
+@media all and (min-width:600px) {
+  nav {
+    .brand {
+      flex-basis: 10%;
+    }
+  }
+}
+
+
+@media all and (min-width:1024px) {
+  nav {
+    padding-right: 18%;
+    .brand {
+      flex-basis: 8%;
+      display: flex;
+      .brand-logo {
+        align-self: center;
+      }
+    }
+    .mobile-nav-btn {
+      display: none;
+    }
+    .navigation {
+      position: relative;
+      flex-basis: 63%;
+      display: flex;
+      padding-top: 0;
+      justify-content: space-between;
+      .navigation-item {
+        list-style-type: none;
+        padding: 3px 0;
+        &:hover {
+          cursor: pointer;
+          border-bottom: 2px solid $nav-text-color;
+        }
+      }
+      .active {
+        display: block;
+        border-top: 2px solid $nav-text-color;
+        border-bottom: 2px solid $nav-text-color;
+      }
+    }
+  }
+}
+
+
+@media all and (min-width:1200px) {
+  nav {
+    .brand {
+      flex-basis: 5%;
+    }
+  }
+}
+
+
+@media all and (min-width:1800px) {
+  nav {
+    padding: 32px 34% 32px 25%;
+  }
+}
