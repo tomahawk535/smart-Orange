@@ -55,7 +55,6 @@ nav {
     }
   }
 }
-
 @media all and (min-width:600px) {
   nav {
     .brand {
@@ -63,8 +62,6 @@ nav {
     }
   }
 }
-
-
 @media all and (min-width:1024px) {
   nav {
     padding-right: 18%;
@@ -100,8 +97,6 @@ nav {
     }
   }
 }
-
-
 @media all and (min-width:1200px) {
   nav {
     .brand {
@@ -109,8 +104,6 @@ nav {
     }
   }
 }
-
-
 @media all and (min-width:1800px) {
   nav {
     padding: 32px 34% 32px 25%;
@@ -119,8 +112,6 @@ nav {
     }
   }
 }
-
-
 // navigation style end here
 
 // header style start here
@@ -177,6 +168,8 @@ header {
       background-color: $light-btn-bg;
       &:hover {
         cursor: pointer;
+        background-color:  $dark-btn-bg;
+        color: $sub-text-color;
       }
 
     }
@@ -201,6 +194,8 @@ header {
           margin-right: 10px;
           &:hover {
             cursor: pointer;
+            background-color:  $dark-btn-bg;
+            color: $sub-text-color;
           }
         }
       }
@@ -228,3 +223,106 @@ header {
     padding:24px 25%;
   }
 }
+//header style end here
+
+// article style start here
+article {
+  display: flex;
+  padding: 20px 9% 150px;
+  .company {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:  $sub-bg;
+    padding: 30px 5%;
+    .images {
+      order: 2;
+      flex-basis: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .company-img {
+        flex-basis: 48%;
+        img {
+          width: 100%;
+        }
+        &:nth-child(2n){
+          margin-top: 30px;
+        }
+        &:last-child {
+          margin-top: -60px;
+        }
+      }
+    }
+    .company-info {
+      order: 1;
+      flex-basis: 100%;
+      margin-bottom: 16px;
+      .company-info-title {
+        font-family: $font;
+        color:  $headers-text-color;
+      }
+      .company-info-description {
+        @include p-medium;
+        text-align: justify;
+        margin: 16px 0;
+      }
+      .company-info-btn {
+        @include btn;
+        background-color:  $light-btn-bg;
+        padding: 30px 65px;
+      }
+    }
+  }
+}
+
+@media all and (min-width:735px){
+  article {
+    .company {
+      .images {
+        .company-img {
+          &:last-child {
+            margin-top: -80px;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (min-width:1200px) {
+  article {
+    .company {
+      .images {
+        order: 1;
+        flex-basis: 60%;
+      }
+      .company-info {
+        order: 2;
+        flex-basis: 40%;
+        padding-left: 30px;
+        .company-info-title {
+          @include secondary-headers;
+        }
+      }
+      .company-info-btn {
+        &:hover {
+          cursor: pointer;
+          background-color:  $dark-btn-bg;
+          color: $sub-text-color;
+        }
+      }
+    }
+  }
+}
+@media all and (min-width:1800px) {
+  article {
+    padding: 20px 22% 150px;
+   .company {
+     .company-info {
+       .company-info-description {
+         @include p-large;
+       }
+     }
+   }
+  }
+}
+

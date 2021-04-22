@@ -231,7 +231,9 @@ header .header-img .header-img-btn {
   background-color: #fff
 }
 header .header-img .header-img-btn:hover {
-  cursor: pointer
+  cursor: pointer;
+  background-color: #333;
+  color: #fff
 }
 @media all and (min-width:1023px) {
   header .header-nav {
@@ -264,7 +266,9 @@ header .header-img .header-img-btn:hover {
     margin-right: 10px
   }
   header .header-nav .header-nav-btn-group .header-nav-btn:hover {
-    cursor: pointer
+    cursor: pointer;
+    background-color: #333;
+    color: #fff
   }
   header .header-nav .header-nav-step {
     display: block;
@@ -289,6 +293,129 @@ header .header-img .header-img-btn:hover {
 @media all and (min-width:1800px) {
   header {
     padding: 24px 25%
+  }
+}
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 9% 150px
+}
+article .company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #fbfbfb;
+  padding: 30px 5%
+}
+article .company .images {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between
+}
+article .company .images .company-img {
+  -ms-flex-preferred-size: 48%;
+  flex-basis: 48%
+}
+article .company .images .company-img img {
+  width: 100%
+}
+article .company .images .company-img:nth-child(2n) {
+  margin-top: 30px
+}
+article .company .images .company-img:last-child {
+  margin-top: -60px
+}
+article .company .company-info {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  margin-bottom: 16px
+}
+article .company .company-info .company-info-title {
+  font-family: "TT Hoves";
+  color: #bdbdbd
+}
+article .company .company-info .company-info-description {
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: justify;
+  margin: 16px 0
+}
+article .company .company-info .company-info-btn {
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  border: none;
+  outline: 0;
+  -webkit-appearance: none;
+  text-transform: uppercase;
+  background-color: #fff;
+  padding: 30px 65px
+}
+@media all and (min-width:735px) {
+  article .company .images .company-img:last-child {
+    margin-top: -80px
+  }
+}
+@media all and (min-width:1200px) {
+  article .company .images {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    -ms-flex-preferred-size: 60%;
+    flex-basis: 60%
+  }
+  article .company .company-info {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+    padding-left: 30px
+  }
+  article .company .company-info .company-info-title {
+    font-family: "TT Hoves";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px
+  }
+  article .company .company-info-btn:hover {
+    cursor: pointer;
+    background-color: #333;
+    color: #fff
+  }
+}
+@media all and (min-width:1800px) {
+  article {
+    padding: 20px 22% 150px
+  }
+  article .company .company-info .company-info-description {
+    font-family: "TT Hoves";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px
   }
 }
 @font-face {
