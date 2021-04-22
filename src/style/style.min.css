@@ -26,6 +26,13 @@
   font-weight: 500;
   font-style: normal
 }
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url(../../fonts/SF_pro/SFProDisplay-Heavy.eot);
+  src: local("SF Pro Display Heavy"),local("SFProDisplay-Heavy"),url(../../fonts/SF_pro/SFProDisplay-Heavy.eot?#iefix) format("embedded-opentype"),url(../../fonts/SF_pro/SFProDisplay-Heavy.woff2) format("woff2"),url(../../fonts/SF_pro/SFProDisplay-Heavy.woff) format("woff"),url(../../fonts/SF_pro/SFProDisplay-Heavy.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal
+}
 * {
   padding: 0;
   margin: 0;
@@ -299,6 +306,8 @@ article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 20px 9% 150px
 }
 article .company {
@@ -372,9 +381,64 @@ article .company .company-info .company-info-btn {
   background-color: #fff;
   padding: 30px 65px
 }
+article .tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 100px 0
+}
+article .tasks .tasks-title {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  color: #bdbdbd;
+  font-family: "TT Hoves"
+}
+article .tasks .task-item {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px
+}
+article .tasks .task-item .task-number {
+  font-size: 70px;
+  color: #f2f2f2;
+  font-family: "SF Pro Display";
+  font-weight: 900
+}
+article .tasks .task-item .task-description {
+  -ms-flex-preferred-size: 80%;
+  flex-basis: 80%;
+  margin-left: auto;
+  padding-top: 10px;
+  text-align: justify;
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px
+}
+article .tasks .task-item .task-description br {
+  display: none
+}
 @media all and (min-width:735px) {
   article .company .images .company-img:last-child {
     margin-top: -80px
+  }
+  article .tasks {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
+  article .tasks .task-item {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%
+  }
+  article .tasks .task-item .task-description br {
+    display: block
   }
 }
 @media all and (min-width:1200px) {
@@ -404,6 +468,21 @@ article .company .company-info .company-info-btn {
     cursor: pointer;
     background-color: #333;
     color: #fff
+  }
+  article .tasks .tasks-title {
+    font-family: "TT Hoves";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px
+  }
+  article .tasks .task-item .task-number {
+    font-size: 200px
+  }
+  article .tasks .task-item .task-description {
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    padding-top: 40px
   }
 }
 @media all and (min-width:1800px) {
@@ -444,5 +523,12 @@ article .company .company-info .company-info-btn {
   src: url(../../fonts/TT_Hoves/TTHoves-Medium.eot);
   src: local("TT Hoves Medium"),local("TTHoves-Medium"),url(../../fonts/TT_Hoves/TTHoves-Medium.eot?#iefix) format("embedded-opentype"),url(../../fonts/TT_Hoves/TTHoves-Medium.woff2) format("woff2"),url(../../fonts/TT_Hoves/TTHoves-Medium.woff) format("woff"),url(../../fonts/TT_Hoves/TTHoves-Medium.ttf) format("truetype");
   font-weight: 500;
+  font-style: normal
+}
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url(../../fonts/SF_pro/SFProDisplay-Heavy.eot);
+  src: local("SF Pro Display Heavy"),local("SFProDisplay-Heavy"),url(../../fonts/SF_pro/SFProDisplay-Heavy.eot?#iefix) format("embedded-opentype"),url(../../fonts/SF_pro/SFProDisplay-Heavy.woff2) format("woff2"),url(../../fonts/SF_pro/SFProDisplay-Heavy.woff) format("woff"),url(../../fonts/SF_pro/SFProDisplay-Heavy.ttf) format("truetype");
+  font-weight: 900;
   font-style: normal
 }

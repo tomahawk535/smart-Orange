@@ -228,6 +228,7 @@ header {
 // article style start here
 article {
   display: flex;
+  flex-wrap: wrap;
   padding: 20px 9% 150px;
   .company {
     display: flex;
@@ -273,6 +274,38 @@ article {
       }
     }
   }
+  .tasks {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    .tasks-title {
+      flex-basis: 100%;
+      color: $headers-text-color;
+      font-family: $font;
+    }
+    .task-item {
+      flex-basis: 100%;
+      display: flex;
+      padding-top: 16px;
+      .task-number {
+        font-size: 70px;
+        color:  $task-number-color;
+        font-family:  $font-task;
+        font-weight: 900;
+      }
+      .task-description {
+        flex-basis: 80%;
+        margin-left: auto;
+        padding-top: 10px;
+        text-align: justify;
+        @include p-large;
+        br {
+          display: none;
+        }
+      }
+
+    }
+  }
 }
 
 @media all and (min-width:735px){
@@ -285,6 +318,18 @@ article {
           }
         }
       }
+    }
+    .tasks {
+      justify-content: space-between;
+      .task-item {
+        flex-basis: 50%;
+        .task-description {
+          br {
+            display: block;
+          }
+        }
+      }
+
     }
   }
 }
@@ -308,6 +353,20 @@ article {
           cursor: pointer;
           background-color:  $dark-btn-bg;
           color: $sub-text-color;
+        }
+      }
+    }
+    .tasks {
+      .tasks-title {
+        @include secondary-headers;
+      }
+      .task-item {
+        .task-number {
+          font-size: 200px;
+        }
+        .task-description {
+          flex-basis: 75%;
+          padding-top: 40px;
         }
       }
     }

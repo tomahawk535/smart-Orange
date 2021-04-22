@@ -45,6 +45,19 @@
   font-style: normal;
 }
 
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../../fonts/SF_pro/SFProDisplay-Heavy.eot');
+  src: local('SF Pro Display Heavy'), local('SFProDisplay-Heavy'),
+  url('../../fonts/SF_pro/SFProDisplay-Heavy.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/SF_pro/SFProDisplay-Heavy.woff2') format('woff2'),
+  url('../../fonts/SF_pro/SFProDisplay-Heavy.woff') format('woff'),
+  url('../../fonts/SF_pro/SFProDisplay-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+$font-task: 'SF Pro Display';
 $font:  'TT Hoves';
 
 // colors
@@ -53,6 +66,7 @@ $sub-text-color: #fff;
 $headers-text-color: #bdbdbd;
 $form-text-color: #8d8d8d;
 $nav-text-color: #333333;
+$task-number-color: #f2f2f2;
 
 
 //backgrounds
