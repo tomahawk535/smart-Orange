@@ -417,12 +417,154 @@ article .tasks .task-item .task-description {
   text-align: justify;
   font-family: "TT Hoves";
   font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 36px
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px
 }
 article .tasks .task-item .task-description br {
   display: none
+}
+article .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
+}
+article .projects .projects-title {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  color: #bdbdbd;
+  margin-bottom: 30px
+}
+article .projects .project-item-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap
+}
+article .projects .project-item-group .projects-item {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%
+}
+article .projects .project-item-group .projects-item .project-item-title {
+  color: #000;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-family: "TT Hoves"
+}
+article .projects .project-item-group .projects-item .project-item-title br {
+  display: none
+}
+article .projects .project-item-group .projects-item .project-item-btn {
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  border: none;
+  outline: 0;
+  -webkit-appearance: none;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  background-color: #fff
+}
+article .projects .project-item-group .projects-item img {
+  width: 100%
+}
+article .projects .projects-btn {
+  margin-left: auto;
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  border: none;
+  outline: 0;
+  -webkit-appearance: none;
+  text-transform: uppercase;
+  padding: 30px 40px;
+  background-color: #333;
+  color: #fff
+}
+article .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 120px 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+article .contact .contact-title {
+  font-family: "TT Hoves";
+  color: #bdbdbd;
+  margin-bottom: 25px;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  text-align: center
+}
+article .contact .contact-form {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%
+}
+article .contact .contact-form .feedback-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+article .contact .contact-form .feedback-form .feedback-form-item {
+  -ms-flex-preferred-size: 80%;
+  flex-basis: 80%;
+  margin: 5px 0;
+  outline: 0;
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  border: none;
+  -webkit-appearance: none;
+  background-color: #f3f3f3;
+  color: #8d8d8d;
+  padding: 15px 21px
+}
+article .contact .contact-form .feedback-form .feedback-text {
+  height: 150px
+}
+article .contact .contact-form .feedback-form .feedback-form-btn {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  margin: 5px 0;
+  font-family: "TT Hoves";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  border: none;
+  outline: 0;
+  -webkit-appearance: none;
+  text-transform: uppercase;
+  padding: 30px 45px;
+  background-color: #333;
+  color: #fff
+}
+article .contact .contact-img {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  display: none
+}
+article .contact .contact-img img {
+  width: 100%
 }
 @media all and (min-width:735px) {
   article .company .images .company-img:last-child {
@@ -439,6 +581,55 @@ article .tasks .task-item .task-description br {
   }
   article .tasks .task-item .task-description br {
     display: block
+  }
+}
+@media all and (min-width:1023px) {
+  article .projects .project-item-group {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+  }
+  article .projects .project-item-group .projects-item {
+    -ms-flex-preferred-size: 49%;
+    flex-basis: 49%
+  }
+  article .projects .project-item-group .projects-item img {
+    height: 250px
+  }
+  article .projects .projects-btn {
+    height: 65px;
+    -ms-flex-item-align: end;
+    align-self: flex-end
+  }
+  article .contact .contact-title {
+    text-align: left;
+    font-family: "TT Hoves";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px
+  }
+  article .contact .contact-form {
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%
+  }
+  article .contact .contact-form .feedback-form {
+    padding-right: 5%
+  }
+  article .contact .contact-form .feedback-form .feedback-form-item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%
+  }
+  article .contact .contact-form .feedback-form .feedback-form-btn {
+    margin-right: auto
+  }
+  article .contact .contact-img {
+    -ms-flex-preferred-size: 60%;
+    flex-basis: 60%;
+    height: 67%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
   }
 }
 @media all and (min-width:1200px) {
@@ -482,7 +673,81 @@ article .tasks .task-item .task-description br {
   article .tasks .task-item .task-description {
     -ms-flex-preferred-size: 75%;
     flex-basis: 75%;
-    padding-top: 40px
+    padding-top: 40px;
+    font-family: "TT Hoves";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px
+  }
+  article .projects .projects-title {
+    font-family: "TT Hoves";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px
+  }
+  article .projects .project-item-group .projects-item {
+    position: relative;
+    margin-bottom: 30px
+  }
+  article .projects .project-item-group .projects-item:nth-child(3n) {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%
+  }
+  article .projects .project-item-group .projects-item:nth-child(4n) {
+    -ms-flex-preferred-size: 45%;
+    flex-basis: 45%
+  }
+  article .projects .project-item-group .projects-item:last-child {
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%
+  }
+  article .projects .project-item-group .projects-item .project-item-title {
+    font-family: "TT Hoves";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 700;
+    font-size: 45px;
+    color: #fff
+  }
+  article .projects .project-item-group .projects-item .project-item-title br {
+    display: block
+  }
+  article .projects .project-item-group .projects-item .project-item-btn {
+    color: #fff;
+    background-color: transparent
+  }
+  article .projects .project-item-group .projects-item .project-item-btn:hover {
+    cursor: pointer
+  }
+  article .projects .project-item-group .projects-item .shadow {
+    display: none;
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 29px 10%
+  }
+  article .projects .project-item-group .projects-item:hover {
+    cursor: pointer
+  }
+  article .projects .project-item-group .projects-item:hover .shadow {
+    display: block
+  }
+  article .projects .projects-btn:hover {
+    cursor: pointer;
+    background-color: #8d8d8d;
+    color: #000
+  }
+  article .contact .contact-form .feedback-form .feedback-form-btn:hover {
+    cursor: pointer;
+    background-color: #f3f3f3;
+    color: #8d8d8d
   }
 }
 @media all and (min-width:1800px) {

@@ -298,12 +298,109 @@ article {
         margin-left: auto;
         padding-top: 10px;
         text-align: justify;
-        @include p-large;
+        @include p-medium;
         br {
           display: none;
         }
       }
 
+    }
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    .projects-title {
+      flex-basis: 100%;
+      color:  $headers-text-color;
+      margin-bottom: 30px;
+    }
+    .project-item-group {
+      display: flex;
+      flex-wrap: wrap;
+      .projects-item {
+        flex-basis: 100%;
+        .project-item-title {
+          color:  $main-text-color;
+          font-size: 18px;
+          text-transform: uppercase;
+          margin: 10px 0;
+          font-family: $font;
+          br {
+            display: none;
+          }
+        }
+        .project-item-btn {
+          @include btn;
+          margin-bottom: 32px;
+          background-color:  $light-btn-bg;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .projects-btn {
+      margin-left: auto;
+      @include btn;
+      padding: 30px 40px;
+      background-color:  $dark-btn-bg;
+      color:  $sub-text-color;
+    }
+  }
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 120px 0;
+    justify-content: center;
+    .contact-title {
+      font-family: $font;
+      color:  $headers-text-color;
+      margin-bottom: 25px;
+      flex-basis: 100%;
+      text-align: center;
+    }
+    .contact-form {
+      flex-basis: 100%;
+      .feedback-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .feedback-form-item {
+          flex-basis: 80%;
+          margin: 5px 0;
+          outline: none;
+          font-family: $font;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 12px;
+          border: none;
+          -webkit-appearance: none;
+          background-color:  $form-bg;
+          color:  $form-text-color;
+          padding: 15px 21px;
+
+        }
+        .feedback-text {
+          height: 150px;
+        }
+        .feedback-form-btn {
+          flex-basis: 50%;
+          margin: 5px 0;
+          @include btn;
+          padding: 30px 45px;
+          background-color:  $dark-btn-bg;
+          color:  $sub-text-color;
+
+        }
+      }
+    }
+    .contact-img {
+      flex-basis: 100%;
+      display: none;
+      img {
+        width: 100%;
+      }
     }
   }
 }
@@ -331,6 +428,49 @@ article {
       }
 
     }
+  }
+}
+@media all and (min-width:1023px) {
+  article {
+    .projects {
+      .project-item-group {
+        justify-content: space-between;
+        .projects-item {
+          flex-basis: 49%;
+          img {
+            height: 250px;
+          }
+        }
+      }
+      .projects-btn {
+        height: 65px;
+        align-self: flex-end;
+      }
+    }
+    .contact {
+      .contact-title {
+        text-align: left;
+        @include secondary-headers;
+      }
+      .contact-form {
+        flex-basis: 40%;
+        .feedback-form {
+          padding-right: 5%;
+          .feedback-form-item {
+            flex-basis: 100%;
+          }
+          .feedback-form-btn {
+            margin-right: auto;
+          }
+        }
+      }
+      .contact-img {
+        flex-basis: 60%;
+        height: 67%;
+        display: flex;
+      }
+    }
+
   }
 }
 @media all and (min-width:1200px) {
@@ -367,6 +507,81 @@ article {
         .task-description {
           flex-basis: 75%;
           padding-top: 40px;
+          @include p-large;
+        }
+      }
+    }
+    .projects {
+      .projects-title {
+        @include secondary-headers;
+      }
+     .project-item-group {
+       .projects-item {
+         position: relative;
+         margin-bottom: 30px;
+         &:nth-child(3n){
+           flex-basis: 25%;
+         }
+         &:nth-child(4n){
+           flex-basis: 45%;
+         }
+         &:last-child {
+          flex-basis: 25%;
+         }
+         .project-item-title {
+           @include secondary-headers;
+           font-weight: 700;
+           font-size: 45px;
+           color: $sub-text-color;
+
+           br {
+             display: block;
+           }
+         }
+         .project-item-btn {
+           color: $sub-text-color;
+           background-color: transparent;
+           &:hover {
+             cursor: pointer;
+           }
+         }
+         .shadow {
+           display: none;
+           background-color: rgba(0, 0, 0, 0.5);
+           width: 100%;
+           height: 100%;
+           position: absolute;
+           top: 0;
+           left: 0;
+           padding: 29px 10%;
+
+         }
+         &:hover {
+           cursor: pointer;
+           .shadow {
+             display: block;
+           }
+         }
+       }
+     }
+      .projects-btn {
+        &:hover {
+          cursor: pointer;
+          background-color:  $form-text-color;
+          color:  $main-text-color;
+        }
+      }
+    }
+    .contact {
+      .contact-form {
+        .feedback-form {
+          .feedback-form-btn {
+            &:hover {
+              cursor: pointer;
+              background-color:  $form-bg;
+              color: $form-text-color;
+            }
+          }
         }
       }
     }
