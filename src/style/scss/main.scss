@@ -1,5 +1,12 @@
 @import "tools";
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
 // navigation style start here
 nav {
   display: flex;
@@ -73,7 +80,7 @@ nav {
     }
     .navigation {
       position: relative;
-      flex-basis: 63%;
+      flex-basis: 58%;
       display: flex;
       padding-top: 0;
       justify-content: space-between;
@@ -107,5 +114,117 @@ nav {
 @media all and (min-width:1800px) {
   nav {
     padding: 32px 34% 32px 25%;
+    .navigation {
+      flex-basis: 55%;
+    }
+  }
+}
+
+
+// navigation style end here
+
+// header style start here
+header {
+  display: flex;
+  padding: 12px 9%;
+  flex-wrap: wrap;
+
+  .header-nav{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    .header-title {
+      font-family: $font;
+      font-weight: 700;
+      font-style: normal;
+      span {
+        font-weight: 300;
+        color:  $headers-text-color;
+      }
+    }
+    .header-nav-btn-group {
+      display: flex;
+      width: 120px;
+      justify-content: space-between;
+      .header-nav-btn {
+        width: 53px;
+        height: 53px;
+        background-color:  $header-btn-bg;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .header-nav-step {
+      display: none;
+    }
+  }
+  .header-img {
+    flex-basis: 100%;
+
+    img {
+      width: 100%;
+    }
+    .header-img-btn {
+      position: relative;
+      bottom:  75px;
+      left: 0;
+      padding: 30px 50px;
+      @include btn;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      background-color: $light-btn-bg;
+      &:hover {
+        cursor: pointer;
+      }
+
+    }
+  }
+}
+@media all and (min-width:1023px) {
+  header {
+    .header-nav {
+      flex-basis: 37%;
+      flex-wrap: wrap;
+      align-content: center;
+      .header-title {
+        flex-basis: 100%;
+        @include main-header;
+        margin-bottom: 90px;
+      }
+      .header-nav-btn-group {
+        flex-basis: 100%;
+        justify-content: start;
+        margin-bottom: 112px;
+        .header-nav-btn {
+          margin-right: 10px;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      .header-nav-step {
+        display: block;
+        font-family: $font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 24px;
+        color: $headers-text-color;
+        flex-basis: 50%;
+        text-align: justify;
+        justify-content: stretch;
+      }
+    }
+
+    .header-img {
+      flex-basis: 63%;
+    }
+  }
+}
+@media all and (min-width:1800px) {
+  header {
+    padding:24px 25%;
   }
 }
